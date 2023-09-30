@@ -1,0 +1,2069 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>998</width>
+    <height>614</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>:/icons/group.png</normaloff>:/icons/group.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="Container">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1021</width>
+      <height>631</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>7</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+QFrame#Container{
+	background-color:#2c2c54;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <widget class="QGroupBox" name="groupBox_left">
+     <property name="geometry">
+      <rect>
+       <x>19</x>
+       <y>12</y>
+       <width>391</width>
+       <height>561</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QGroupBox#groupBox_left{
+border-radius:5px;
+border:1px solid #40407a;
+}</string>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QFrame" name="frame_5">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>492</y>
+        <width>161</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: none;</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QPushButton" name="pushButton_7">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>0</y>
+         <width>31</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Social Media Circled</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+   color: #f1f2f6;
+   border:0;
+}
+QPushButton::pressed{
+	padding-left:5px;
+	padding-top: 3px;
+}</string>
+       </property>
+       <property name="text">
+        <string>(</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_4">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>0</y>
+         <width>31</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Social Media Circled</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+   color: #f1f2f6;
+   border:0;
+}
+QPushButton::pressed{
+	padding-left:5px;
+	padding-top: 3px;
+}</string>
+       </property>
+       <property name="text">
+        <string>e</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_8">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>0</y>
+         <width>31</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Social Media Circled</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+   color: #f1f2f6;
+   border:0;
+}
+QPushButton::pressed{
+	padding-left:5px;
+	padding-top: 3px;
+}</string>
+       </property>
+       <property name="text">
+        <string>M</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_9">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>0</y>
+         <width>31</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Social Media Circled</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+   color:#f1f2f6;
+   border:0;
+}
+QPushButton::pressed{
+	padding-left:5px;
+	padding-top: 3px;
+}</string>
+       </property>
+       <property name="text">
+        <string>k</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_10">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>0</y>
+         <width>31</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Social Media Circled</family>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+   color: #f1f2f6;
+   border:0;
+}
+QPushButton::pressed{
+	padding-left:5px;
+	padding-top: 3px;
+}</string>
+       </property>
+       <property name="text">
+        <string>E</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QFrame" name="frame_info">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>430</y>
+        <width>241</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame#frame_info{
+border-radius:5px;
+background-color:0;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>211</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Yu Gothic UI</family>
+         <pointsize>8</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color:#f1f2f6;
+</string>
+       </property>
+       <property name="text">
+        <string>𝗪𝗛𝗔𝗧𝗦𝗔𝗣𝗣 : +213 00 00 00 00</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>19</y>
+         <width>211</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Yu Gothic UI</family>
+         <pointsize>8</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: #f1f2f6;
+</string>
+       </property>
+       <property name="text">
+        <string>MAIN CREDIT:    LAROUSSIGSM.NET</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>-3</y>
+         <width>221</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Yu Gothic UI</family>
+         <pointsize>8</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: #f1f2f6;
+</string>
+       </property>
+       <property name="text">
+        <string>Coding By Laroussi Boulanouar | Ouled Djellal </string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="widget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>70</y>
+        <width>251</width>
+        <height>251</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/images/Images/user.png);</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="frame_2">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>6</y>
+       <width>551</width>
+       <height>561</height>
+      </rect>
+     </property>
+     <property name="cursor">
+      <cursorShape>ArrowCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QFrame#frame_2{
+border-radius:5px;
+background-color: 0;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>20</y>
+        <width>361</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>22</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(239, 239, 239);</string>
+      </property>
+      <property name="text">
+       <string> Create a Free Account !</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Reg_Btn">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>440</y>
+        <width>261</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+        <stylestrategy>PreferDefault</stylestrategy>
+        <kerning>false</kerning>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::NoContextMenu</enum>
+      </property>
+      <property name="toolTip">
+       <string>Laroussi </string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+  background-color: #FFC312;
+  color: #1e272e;
+  border-radius: 5px;
+}
+QPushButton::pressed{
+	padding-left:5px;
+	padding-top: 5px;
+	background-color: rgb(163, 228, 215);
+}</string>
+      </property>
+      <property name="text">
+       <string>Register</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="Reg_username">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>100</y>
+        <width>261</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>231</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="acceptDrops">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(242, 243, 244);
+color: #273746 ;
+border: none;
+border-bottom: 2px solid rgb(125, 168, 255);
+border-radius: 5px;
+padding: 5px;
+padding-left: 5px;</string>
+      </property>
+      <property name="frame">
+       <bool>true</bool>
+      </property>
+      <property name="placeholderText">
+       <string>Enter Your First Name ...</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="Reg_password">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>350</y>
+        <width>261</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>231</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="acceptDrops">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+color: #273746 ;
+border: none;
+border-bottom: 2px solid rgb(125, 168, 255);
+border-radius: 5px;
+padding: 5px;
+padding-left: 5px;</string>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+      <property name="placeholderText">
+       <string>Enter Your Password ...</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="Reg_email">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>180</y>
+        <width>261</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>231</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="acceptDrops">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+color: #273746 ;
+border: none;
+border-bottom: 2px solid rgb(125, 168, 255);
+border-radius: 5px;
+padding: 5px;
+padding-left: 5px;</string>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Normal</enum>
+      </property>
+      <property name="placeholderText">
+       <string>XXXXX@Email.com</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="backLogin_Button">
+      <property name="geometry">
+       <rect>
+        <x>262</x>
+        <y>512</y>
+        <width>241</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+  background-color: 0;
+	color: rgb(255, 255, 255);
+  border-radius: 5px;
+}
+QPushButton::pressed{
+	padding-left:5px;
+	padding-top: 3px;
+}</string>
+      </property>
+      <property name="text">
+       <string>I'm already register back to login !!</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>510</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>HoloLens MDL2 Assets</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+  background-color: 0;
+	color: rgb(255, 170, 0);
+  border-radius: 5px;
+}</string>
+      </property>
+      <property name="text">
+       <string></string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>21</width>
+        <height>21</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Reg_Show_pass">
+      <property name="geometry">
+       <rect>
+        <x>311</x>
+        <y>136</y>
+        <width>31</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="toolTip">
+       <string>Show Password</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+  background-color: 0;
+  border-radius:0;
+  image: url(:/icons/view.png);
+}
+QPushButton::pressed{
+	padding-left:2px;
+	padding-top: 1px;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Reg_Hide_pass">
+      <property name="geometry">
+       <rect>
+        <x>311</x>
+        <y>136</y>
+        <width>31</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="toolTip">
+       <string>Hide Password</string>
+      </property>
+      <property name="statusTip">
+       <string/>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+  background-color: 0;
+  border-radius:0;
+image: url(:/icons/hidden.png);
+}
+QPushButton::pressed{
+	padding-left:2px;
+	padding-top: 1px;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="Reg_username_2">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>140</y>
+        <width>261</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>231</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="acceptDrops">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(242, 243, 244);
+color: #273746 ;
+border: none;
+border-bottom: 2px solid rgb(125, 168, 255);
+border-radius: 5px;
+padding: 5px;
+padding-left: 5px;</string>
+      </property>
+      <property name="frame">
+       <bool>true</bool>
+      </property>
+      <property name="placeholderText">
+       <string>Enter Your Last Name ...</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioButton">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>230</y>
+        <width>71</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Female</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioButton_2">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>230</y>
+        <width>61</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Male</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>230</y>
+        <width>121</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(245, 245, 245);</string>
+      </property>
+      <property name="text">
+       <string>Select Gender</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>260</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="maxVisibleItems">
+       <number>20</number>
+      </property>
+      <item>
+       <property name="text">
+        <string>Select Country</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Afghanistan</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/af.png</normaloff>:/images/country flags_250px/af.png</iconset>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Albania</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/al.png</normaloff>:/images/country flags_250px/al.png</iconset>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Algeria</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/dz.png</normaloff>:/images/country flags_250px/dz.png</iconset>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Andorra</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Angola</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Antigua and Barbuda	</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Argentina</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Armenia</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Australia</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Austria</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Azerbaijan</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Bahamas</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Bahrain</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Bangladesh</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Barbados</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Belarus</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Belgium</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Belize</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Benin</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Bhutan</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Bolivia</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Bosnia and Herzegovina</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Botswana</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Brazil</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Brunei</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Bulgaria</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Burkina Faso</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Burundi</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Côte d'Ivoire</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Cabo Verde</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Cambodia</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Cameroon</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Canada</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Central African Republic</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Chad</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Chile</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>China</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Colombia</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Comoros</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Congo (Congo-Brazzaville)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Costa Rica</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Croatia</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Cuba</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Cyprus</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Czechia (Czech Republic)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Democratic Republic of the Congo</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Denmark</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Djibouti</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Dominica</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Dominican Republic</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Ecuador</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Egypt</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>El Salvador</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Equatorial Guinea</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Eritrea</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Estonia</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Eswatini (fmr. &quot;Swaziland&quot;)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Ethiopia</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Fiji</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Finland</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>France</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Gabon</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Gambia</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Georgia</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Germany</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Ghana</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Greece</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Grenada</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Guatemala</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Guinea</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Guinea-Bissau</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Guyana</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Haiti</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Holy See</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Honduras</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Hungary</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Iceland</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>India</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Indonesia</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Iran</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Iraq</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Ireland</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Israel</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Italy</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Jamaica</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Japan</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Jordan</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Kazakhstan</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Kenya</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Kiribati</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Kuwait</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Kyrgyzstan</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Laos</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Latvia</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Lebanon</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Lesotho</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Liberia</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Libya</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Liechtenstein</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Lithuania</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Luxembourg</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Madagascar</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Malawi</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Malaysia</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Maldives</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Mali</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Malta</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Marshall Islands</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Mauritania</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Mauritius</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Mexico</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Micronesia</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Moldova</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Monaco</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Mongolia</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Montenegro</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Morocco</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Mozambique</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Myanmar (formerly Burma)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Namibia</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Nauru</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Nepal</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Netherlands</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>New Zealand</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Nicaragua</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Niger</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Nigeria</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>North Korea</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>North Macedonia</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Norway</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Oman</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Pakistan</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Palau</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Palestine State</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Panama</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Papua New Guinea</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Paraguay</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Peru</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Philippines</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Poland</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Portugal</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Qatar</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Romania</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Russia</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Rwanda</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Saint Kitts and Nevis</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Saint Lucia</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Saint Vincent and the Grenadines</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Samoa</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>San Marino</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Sao Tome and Principe</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Saudi Arabia</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Senegal</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Serbia</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Seychelles</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Sierra Leone</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Singapore</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Slovakia</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Slovenia</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Solomon Islands</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Somalia</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>South Africa</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>South Korea</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>South Sudan</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Spain</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Sri Lanka</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Sudan</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Suriname</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Sweden</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Switzerland</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Syria</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Tajikistan</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Tanzania</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Thailand</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Timor-Leste</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Togo</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Tonga</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Trinidad and Tobago</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Tunisia</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Turkey</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Turkmenistan</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Tuvalu</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Uganda</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Ukraine</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>United Arab Emirates</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>United Kingdom</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>United States of America</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Uruguay</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Uzbekistan</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Vanuatu</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Venezuela</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Vietnam</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Yemen</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Zambia</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Zimbabwe</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>270</y>
+        <width>121</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(245, 245, 245);</string>
+      </property>
+      <property name="text">
+       <string>Select Country</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>110</y>
+        <width>121</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(245, 245, 245);</string>
+      </property>
+      <property name="text">
+       <string>First Name</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>150</y>
+        <width>121</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(245, 245, 245);</string>
+      </property>
+      <property name="text">
+       <string>Last Name</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>190</y>
+        <width>121</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(245, 245, 245);</string>
+      </property>
+      <property name="text">
+       <string>Email</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="Reg_username_3">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>310</y>
+        <width>261</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>231</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="acceptDrops">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(242, 243, 244);
+color: #273746 ;
+border: none;
+border-bottom: 2px solid rgb(125, 168, 255);
+border-radius: 5px;
+padding: 5px;
+padding-left: 5px;</string>
+      </property>
+      <property name="frame">
+       <bool>true</bool>
+      </property>
+      <property name="placeholderText">
+       <string>Enter Your Username ...</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>320</y>
+        <width>121</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(245, 245, 245);</string>
+      </property>
+      <property name="text">
+       <string>Username</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>360</y>
+        <width>121</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(245, 245, 245);</string>
+      </property>
+      <property name="text">
+       <string>Password</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="Reg_password_2">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>390</y>
+        <width>261</width>
+        <height>35</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>231</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="acceptDrops">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+color: #273746 ;
+border: none;
+border-bottom: 2px solid rgb(125, 168, 255);
+border-radius: 5px;
+padding: 5px;
+padding-left: 5px;</string>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+      <property name="placeholderText">
+       <string>Enter Your Password ...</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>400</y>
+        <width>151</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(245, 245, 245);</string>
+      </property>
+      <property name="text">
+       <string>Confirm Password</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="images_rc.qrc"/>
+ </resources>
+ <connections/>
+</ui>

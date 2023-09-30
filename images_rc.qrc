@@ -1,0 +1,40 @@
+<RCC>
+  <qresource prefix="images">
+    <file>country flags_250px/dz.png</file>
+    <file>country flags_250px/al.png</file>
+    <file>country flags_250px/af.png</file>
+    <file>Images/group.png</file>
+    <file>Images/user2.png</file>
+    <file>Images/banner_min.png</file>
+    <file>Images/management.png</file>
+    <file>Images/printing.png</file>
+    <file>Images/add.png</file>
+    <file>Images/bin.png</file>
+    <file>Images/refresh.png</file>
+    <file>Images/save.png</file>
+    <file>Images/clean.png</file>
+    <file>Images/files_white.png</file>
+    <file>Images/cart.png</file>
+    <file>Images/increase.png</file>
+    <file>Images/shopping-cart .png</file>
+    <file>Images/package.png</file>
+    <file>Images/power.png</file>
+    <file>Images/supplier_white.png</file>
+    <file>Images/teamwork.png</file>
+    <file>Images/trolley.png</file>
+    <file>Images/employee.png</file>
+    <file>Images/files.png</file>
+    <file>Images/money.png</file>
+    <file>Images/shop-banner.png</file>
+    <file>Images/packaging.png</file>
+    <file>Images/supplier.png</file>
+    <file>Images/home.png</file>
+    <file>Images/key.png</file>
+    <file>Images/password.png</file>
+    <file>Images/password_logo.png</file>
+    <file>Images/setting.png</file>
+    <file>Images/stock.png</file>
+    <file>Images/user.png</file>
+    <file>Images/users.png</file>
+  </qresource>
+</RCC>
