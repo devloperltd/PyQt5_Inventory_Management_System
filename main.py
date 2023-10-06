@@ -22,20 +22,58 @@ class LoginWindow(QMainWindow):
         self.statusBar().setStyleSheet("background-color: #17202A;")
         self.login_Btn.clicked.connect(self.Login_App)
         self.SignUp_Button.clicked.connect(self.Show_Reg)
+        self.Forget_Pass_Button.clicked.connect(self.Forget_PassWindow)
 
         self.Show_pass.clicked.connect(self.toggle_password)
         self.Hide_pass.clicked.connect(self.toggle_password)
         # Initially, hide the "Hide" button        
         self.Hide_pass.hide()
 
+        # Open the URL in the default web browser
+        self.Youtube_Button.clicked.connect(self.openYouTube)
+        self.Facebook_Button.clicked.connect(self.openFacebook)
+        self.Telegram_Button.clicked.connect(self.openTelegram)
+        self.WordPress_Button.clicked.connect(self.openWordPress)
+        self.Mail_Button.clicked.connect(self.openMail)
+
+    def openYouTube(self):
+        # Specify the URL you want to open
+        url = QUrl("https://www.youtube.com/@LaroussiHRJ")
+        # Open the URL in the default web browser
+        QDesktopServices.openUrl(url)
+
+    def openFacebook(self):
+        # Specify the URL you want to open
+        url = QUrl("https://www.facebook.com/LaroussiGsm")
+        # Open the URL in the default web browser
+        QDesktopServices.openUrl(url)
+
+    def openTelegram(self):
+        # Specify the URL you want to open
+        url = QUrl("https://t.me/UncleAnonymous")
+        # Open the URL in the default web browser
+        QDesktopServices.openUrl(url)
+
+    def openWordPress(self):
+        # Specify the URL you want to open
+        url = QUrl("https://laroussigsm.net/")
+        # Open the URL in the default web browser
+        QDesktopServices.openUrl(url)
+
+    def openMail(self):
+        # Specify the URL you want to open
+        url = QUrl("https://t.me/UncleAnonymous")
+        # Open the URL in the default web browser
+        QDesktopServices.openUrl(url)
+
     def Login_App(self):
             UN = self.login_username.text()
             PW = self.login_password.text()
             self.login_username.setText("")
             self.login_password.setText("")
-            self.db = MySQLdb.connect(host ='localhost' , user ='root' , password ='16031980' , db='laroussi_libary')
+            self.db = MySQLdb.connect(host ='localhost' , user ='root' , password ='16031980' , db='laroussi_inventory')
             self.cur = self.db.cursor()
-            self.cur.execute("select * from registration where username = '"+ UN +"' and password = '"+ PW +"'")
+            self.cur.execute("select * from reg_system where reg_username = '"+ UN +"' and reg_password = '"+ PW +"'")
             result = self.cur.fetchone()
 
             if result:
@@ -44,7 +82,8 @@ class LoginWindow(QMainWindow):
                 self.status_bar = self.statusBar()
                 self.status_bar.setStyleSheet("background-color: #17202A; color: #58D68D;")
                 self.status_bar.showMessage('Login details has been successfully registered')
-                QMessageBox.information(self, 'Login successfully', 'Login system successfully !!!')               
+                QMessageBox.information(self, 'Login successfully', 'Login system successfully !!!')
+                self.status_bar.showMessage('')               
                 self.open_main_window()
 
             elif (UN == '' and PW == ''):
@@ -53,7 +92,8 @@ class LoginWindow(QMainWindow):
                 self.status_bar = self.statusBar()
                 self.status_bar.setStyleSheet("background-color: #17202A; color: #F5B041;")
                 self.status_bar.showMessage('This field is required and cannot be empty !!!')
-                QMessageBox.warning(self, 'Warning', 'Field should not be empty !!!')                            
+                QMessageBox.warning(self, 'Warning', 'Field should not be empty !!!')
+                self.status_bar.showMessage('')                            
 
             else:    
                 error_text = '<font color="#C0392B">Invalid User name Or Password !!!</font>'
@@ -64,6 +104,7 @@ class LoginWindow(QMainWindow):
                 self.status_bar.setStyleSheet("background-color: #17202A; color: #E74C3C;")
                 self.status_bar.showMessage('Invalid user name or password !!!')
                 QMessageBox.critical(self, 'Error', 'Invalid user name or password !!!')
+                self.status_bar.showMessage('')
 
     # Initially, Show the password & Hide the password    
     def toggle_password(self):
@@ -78,9 +119,14 @@ class LoginWindow(QMainWindow):
             self.Show_pass.hide()
             self.Hide_pass.show()
 
+    def Forget_PassWindow(self) :
+        self.hide()
+        self.Forget_Pass = Forget_PassWindow()  # Keep a reference to Forget Pass Window 
+        self.Forget_Pass.show()
+
     def Show_Reg(self) :
         self.hide()
-        self.Show_Reg = RegWindow()  # Keep a reference to RegWindow
+        self.Show_Reg = RegWindow()  # Keep a reference to RegWindow Forget_PassWindow
         self.Show_Reg.show()
 
 
@@ -89,9 +135,147 @@ class LoginWindow(QMainWindow):
         self.main_window = main_project()  # Keep a reference to MainWindow
         self.main_window.show()
 
+###########################################
+###### Forget Password Window #############
+
+class Forget_PassWindow(QMainWindow):
+    def __init__(self):
+        super(Forget_PassWindow, self).__init__()
+        # Load the Forget_Password.ui file
+        loadUi('Forget_Password.ui', self)
+        self.statusBar().setStyleSheet("background-color: #17202A;")
+        self.Submit_Btn.clicked.connect(self.Sumbit)
+        self.back2Login_Button.clicked.connect(self.Show_Login)
+
+        self.Show_Forget_pass.clicked.connect(self.toggle_Forget_password)
+        self.Hide_Forget_pass.clicked.connect(self.toggle_Forget_password)
+        # Initially, hide the "Hide" button        
+        self.Hide_Forget_pass.hide()
+
+        self.Show_CForget_pass.clicked.connect(self.toggle_CForget_password)
+        self.Hide_CForget_pass.clicked.connect(self.toggle_CForget_password)
+
+        # Initially, hide the "Hide" button        
+        self.Hide_CForget_pass.hide()
+
+        # Open the URL in the default web browser
+        self.Youtube_Button.clicked.connect(self.openYouTube)
+        self.Facebook_Button.clicked.connect(self.openFacebook)
+        self.Telegram_Button.clicked.connect(self.openTelegram)
+        self.WordPress_Button.clicked.connect(self.openWordPress)
+        self.Mail_Button.clicked.connect(self.openMail)
+
+    def openYouTube(self):
+        # Specify the URL you want to open
+        url = QUrl("https://www.youtube.com/@LaroussiHRJ")
+        # Open the URL in the default web browser
+        QDesktopServices.openUrl(url)
+
+    def openFacebook(self):
+        # Specify the URL you want to open
+        url = QUrl("https://www.facebook.com/LaroussiGsm")
+        # Open the URL in the default web browser
+        QDesktopServices.openUrl(url)
+
+    def openTelegram(self):
+        # Specify the URL you want to open
+        url = QUrl("https://t.me/UncleAnonymous")
+        # Open the URL in the default web browser
+        QDesktopServices.openUrl(url)
+
+    def openWordPress(self):
+        # Specify the URL you want to open
+        url = QUrl("https://laroussigsm.net/")
+        # Open the URL in the default web browser
+        QDesktopServices.openUrl(url)
+
+    def openMail(self):
+        # Specify the URL you want to open
+        url = QUrl("https://t.me/UncleAnonymous")
+        # Open the URL in the default web browser
+        QDesktopServices.openUrl(url)
+
+    # Initially, Show the password & Hide the password    
+    def toggle_Forget_password(self):
+        if self.Forget_New_password.echoMode() == QLineEdit.Normal:
+            # Show the password (set QLineEdit to Normal mode)
+            self.Forget_New_password.setEchoMode(QLineEdit.Password)
+            self.Show_Forget_pass.show()
+            self.Hide_Forget_pass.hide()
+        else:
+            # Hide the password (set QLineEdit to Password mode)
+            self.Forget_New_password.setEchoMode(QLineEdit.Normal)
+            self.Show_Forget_pass.hide()
+            self.Hide_Forget_pass.show()
+
+    # Initially, Show the password & Hide the password    
+    def toggle_CForget_password(self):
+        if self.Confirm_Forget_New_password.echoMode() == QLineEdit.Normal:
+            # Show the password (set QLineEdit to Normal mode)
+            self.Confirm_Forget_New_password.setEchoMode(QLineEdit.Password)
+            self.Show_CForget_pass.show()
+            self.Hide_CForget_pass.hide()
+        else:
+            # Hide the password (set QLineEdit to Password mode)
+            self.Confirm_Forget_New_password.setEchoMode(QLineEdit.Normal)
+            self.Show_CForget_pass.hide()
+            self.Hide_CForget_pass.show()
+
+    def Sumbit(self):
+        Forget_Username = self.Forget_Reg_username.text()
+        Forget_Email = self.Forget_Reg_email.text()
+        Forget_New_Pass = self.Forget_New_password.text()
+        Forget_Confirm_New_Pass = self.Confirm_Forget_New_password.text()
+
+        if Forget_Username == '' or Forget_Email == '' or Forget_New_Pass == '' or  Forget_Confirm_New_Pass =='' :
+            self.status_bar = self.statusBar()
+            self.status_bar.setStyleSheet("background-color: #17202A; color: #F5B041;")
+            self.status_bar.showMessage('Field should not be empty')            
+            QMessageBox.warning(self, 'Warning', 'Field should not be empty !!!')
+            self.status_bar.showMessage('')
+
+        elif Forget_New_Pass != Forget_Confirm_New_Pass:
+            self.status_bar = self.statusBar()
+            self.status_bar.setStyleSheet("background-color: #17202A; color: #E74C3C;")
+            self.status_bar.showMessage('System discovered passwords do not match !!!')
+            QMessageBox.critical(self, 'Error', 'Passwords do not match !!!')
+            self.status_bar.showMessage('')
+
+        else:
+            self.db = MySQLdb.connect(host ='localhost' , user ='root' , password ='16031980' , db='laroussi_inventory')
+            self.cur = self.db.cursor()
+            self.cur.execute("SELECT * FROM reg_system WHERE reg_email = %s", (Forget_Email,)) 
+            row = self.cur.fetchone()
+            if row is None:
+                QMessageBox.critical(self, 'Error', 'This email does not exist !!!')
+            else:
+                update_query = """
+                    UPDATE reg_system
+                    SET reg_password=%s
+                    WHERE reg_email=%s
+                """
+                self.cur.execute(update_query, (Forget_New_Pass, Forget_Email))
+                self.db.commit()                    
+
+                self.status_bar = self.statusBar()
+                self.status_bar.setStyleSheet("background-color: #17202A; color: #58D68D;")
+                self.status_bar.showMessage('Your password has been changed.')
+                QMessageBox.information(self, 'Success', 'Password has been successfully changed !!!')
+                self.status_bar.showMessage('') 
+                # Clear all input fields
+                self.Forget_Reg_username.clear()
+                self.Forget_Reg_email.clear()
+                self.Forget_New_password.clear()
+                self.Confirm_Forget_New_password.clear()
+
+
+    def Show_Login(self):        
+        self.hide()
+        self.Login_App = LoginWindow()  # Keep a reference to LoginWindow
+        self.Login_App.show()
 
 ##########################################
-######### Registration Window ############
+######### Registration Window ############ 
 
 class RegWindow(QMainWindow):
     def __init__(self):
@@ -100,26 +284,72 @@ class RegWindow(QMainWindow):
         loadUi('Registration.ui', self)
         self.statusBar().setStyleSheet("background-color: #17202A;")
         self.Reg_Btn.clicked.connect(self.Registration)
-        self.backLogin_Button.clicked.connect(self.Show_Login)
+        self.back2Login_Button.clicked.connect(self.Show_Login)
         
-        self.Reg_Show_pass.clicked.connect(self.toggle_reg_password)
-        self.Reg_Hide_pass.clicked.connect(self.toggle_reg_password)
+        self.Reg_Show_Pass.clicked.connect(self.toggle_reg_password)
+        self.Reg_Hide_Pass.clicked.connect(self.toggle_reg_password)
+
+        self.Reg_Show_Confirm_Pass.clicked.connect(self.toggle_confirm_reg_password)
+        self.Reg_Hide_Confirm_Pass.clicked.connect(self.toggle_confirm_reg_password)
+
         # Initially, hide the "Hide" button        
-        self.Reg_Hide_pass.hide()        
+        self.Reg_Hide_Pass.hide()        
+        self.Reg_Hide_Confirm_Pass.hide()
+
+        # Open the URL in the default web browser
+        self.Youtube_Button.clicked.connect(self.openYouTube)
+        self.Facebook_Button.clicked.connect(self.openFacebook)
+        self.Telegram_Button.clicked.connect(self.openTelegram)
+        self.WordPress_Button.clicked.connect(self.openWordPress)
+        self.Mail_Button.clicked.connect(self.openMail)
+
+    def openYouTube(self):
+        # Specify the URL you want to open
+        url = QUrl("https://www.youtube.com/@LaroussiHRJ")
+        # Open the URL in the default web browser
+        QDesktopServices.openUrl(url)
+
+    def openFacebook(self):
+        # Specify the URL you want to open
+        url = QUrl("https://www.facebook.com/LaroussiGsm")
+        # Open the URL in the default web browser
+        QDesktopServices.openUrl(url)
+
+    def openTelegram(self):
+        # Specify the URL you want to open
+        url = QUrl("https://t.me/UncleAnonymous")
+        # Open the URL in the default web browser
+        QDesktopServices.openUrl(url)
+
+    def openWordPress(self):
+        # Specify the URL you want to open
+        url = QUrl("https://laroussigsm.net/")
+        # Open the URL in the default web browser
+        QDesktopServices.openUrl(url)
+
+    def openMail(self):
+        # Specify the URL you want to open
+        url = QUrl("https://t.me/UncleAnonymous")
+        # Open the URL in the default web browser
+        QDesktopServices.openUrl(url)
 
     def Registration(self):
+        R_First_Name = self.Reg_First_username.text()
+        R_Last_Name = self.Reg_last_username.text()
+        R_em = self.Reg_email.text() 
+        Select_Gender = ''
+        if self.radio_male_Button.isChecked():
+            Select_Gender = 'Male'
+        elif self.radio_female_Button.isChecked():
+            Select_Gender = 'Female'
+        R_Contry = self.Country_Comb.currentText()             
         R_un = self.Reg_username.text()
         R_pw = self.Reg_password.text()
-        R_em = self.Reg_email.text()
-        R_ph = self.Reg_phone.text()
-        self.Reg_username.setText("")
-        self.Reg_password.setText("")
-        self.Reg_email.setText("")
-        self.Reg_phone.setText("")
+        R_C_pw = self.Reg_confirm_password.text() 
 
-        self.db = MySQLdb.connect(host ='localhost' , user ='root' , password ='16031980' , db='laroussi_libary')
+        self.db = MySQLdb.connect(host ='localhost' , user ='root' , password ='16031980' , db='laroussi_inventory')
         self.cur = self.db.cursor()
-        self.cur.execute("select * from registration where username = %s and password = %s", (R_un, R_pw))
+        self.cur.execute("select * from reg_system where reg_username = %s and reg_password = %s", (R_un, R_pw))
         result = self.cur.fetchone() 
 
         if result:
@@ -127,33 +357,63 @@ class RegWindow(QMainWindow):
             self.status_bar.setStyleSheet("background-color: #17202A; color: #58D68D;")
             self.status_bar.showMessage('user name is already registered try to login !!!')            
             QMessageBox.information(self, 'Note !!!', 'user name is already registered !!!')
+            self.status_bar.showMessage('')
 
-        elif (R_un == '' or R_pw == '' or R_em == '' or R_ph == ''):
+        elif (R_un == '' or R_pw == '' or R_em == '' or R_C_pw == '' or R_First_Name == '' or R_Last_Name == '' or R_Contry == '' or Select_Gender == ''):
             self.status_bar = self.statusBar()
             self.status_bar.setStyleSheet("background-color: #17202A; color: #F5B041;")
             self.status_bar.showMessage('This field is required and cannot be empty !!!')            
-            QMessageBox.critical(self, 'Warning', 'Field should not be empty !!!') 
+            QMessageBox.critical(self, 'Warning', 'Field should not be empty !!!')
+            self.status_bar.showMessage('')
+
+        elif R_pw != R_C_pw:
+            self.status_bar = self.statusBar()
+            self.status_bar.setStyleSheet("background-color: #17202A; color: #E74C3C;")
+            self.status_bar.showMessage('System discovered passwords do not match !!!')
+            QMessageBox.critical(self, 'Error', 'Passwords do not match !!!')
+            self.status_bar.showMessage('')            
 
         else:
-            self.cur.execute("INSERT INTO registration (username, password, email, phone) VALUES (%s, %s, %s, %s)", (R_un, R_pw, R_em, R_ph))
+            self.cur.execute("INSERT INTO reg_system (reg_firstrname, reg_lastname, reg_email, reg_gender, reg_couuntry, reg_username, reg_password, reg_confirmpassword) VALUES (%s, %s, %s, %s,%s, %s, %s, %s)", (R_First_Name, R_Last_Name, R_em, Select_Gender, R_Contry, R_un, R_pw, R_C_pw ))
             self.db.commit()
             self.status_bar = self.statusBar()
             self.status_bar.setStyleSheet("background-color: #17202A; color: #58D68D;")
             self.status_bar.showMessage('Login details has been successfully registered')            
             QMessageBox.information(self, 'Success', 'user name is successfully registered !!!')
-
+            # Clear all input fields
+            self.Reg_First_username.clear()
+            self.Reg_last_username.clear() 
+            self.Reg_email.clear() 
+            self.radio_male_Button.setChecked(False)
+            self.radio_female_Button.setChecked(False)
+            self.Country_Comb.setCurrentIndex(0)                  
+            self.Reg_username.clear()
+            self.Reg_password.clear()
+            
     # Initially, Show the password & Hide the password    
     def toggle_reg_password(self):
         if self.Reg_password.echoMode() == QLineEdit.Normal:
             # Show the password (set QLineEdit to Normal mode)
             self.Reg_password.setEchoMode(QLineEdit.Password)
-            self.Reg_Show_pass.show()
-            self.Reg_Hide_pass.hide()
+            self.Reg_Show_Pass.show()
+            self.Reg_Hide_Pass.hide()
         else:
             # Hide the password (set QLineEdit to Password mode)
             self.Reg_password.setEchoMode(QLineEdit.Normal)
-            self.Reg_Show_pass.hide()
-            self.Reg_Hide_pass.show()      
+            self.Reg_Show_Pass.hide()
+            self.Reg_Hide_Pass.show()      
+
+    def toggle_confirm_reg_password(self):
+        if self.Reg_confirm_password.echoMode() == QLineEdit.Normal:
+            # Show the password (set QLineEdit to Normal mode)
+            self.Reg_confirm_password.setEchoMode(QLineEdit.Password)
+            self.Reg_Show_Confirm_Pass.show()
+            self.Reg_Hide_Confirm_Pass.hide()
+        else:
+            # Hide the password (set QLineEdit to Password mode)
+            self.Reg_confirm_password.setEchoMode(QLineEdit.Normal)
+            self.Reg_Show_Confirm_Pass.hide()
+            self.Reg_Hide_Confirm_Pass.show()  
 
 
     def Show_Login(self):        
