@@ -11,11 +11,11 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Login Library Laroussi System</string>
+   <string>Inventory Laroussi Management System | https://laroussigsm.net/</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="icons.qrc">
-    <normaloff>:/icons/password_logo.png</normaloff>:/icons/password_logo.png</iconset>
+   <iconset resource="images_rc.qrc">
+    <normaloff>:/images/Images/trolley.png</normaloff>:/images/Images/trolley.png</iconset>
   </property>
   <property name="styleSheet">
    <string notr="true"/>
@@ -67,15 +67,14 @@ background-color: rgb(23, 32, 42);
      <widget class="QFrame" name="frame_3">
       <property name="geometry">
        <rect>
-        <x>30</x>
+        <x>50</x>
         <y>30</y>
-        <width>261</width>
-        <height>221</height>
+        <width>211</width>
+        <height>201</height>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">image: url(:/icons/7792401.png);
-background-color:0;</string>
+       <string notr="true">background-image: url(:/images/Images/login.png);</string>
       </property>
       <property name="frameShape">
        <enum>QFrame::StyledPanel</enum>
@@ -102,7 +101,7 @@ background-color:0;</string>
       <property name="frameShadow">
        <enum>QFrame::Raised</enum>
       </property>
-      <widget class="QPushButton" name="pushButton_7">
+      <widget class="QPushButton" name="Telegram_Button">
        <property name="geometry">
         <rect>
          <x>70</x>
@@ -134,7 +133,7 @@ QPushButton::pressed{
         <string>(</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_4">
+      <widget class="QPushButton" name="WordPress_Button">
        <property name="geometry">
         <rect>
          <x>100</x>
@@ -166,7 +165,7 @@ QPushButton::pressed{
         <string>e</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_8">
+      <widget class="QPushButton" name="Youtube_Button">
        <property name="geometry">
         <rect>
          <x>10</x>
@@ -198,7 +197,7 @@ QPushButton::pressed{
         <string>M</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_9">
+      <widget class="QPushButton" name="Mail_Button">
        <property name="geometry">
         <rect>
          <x>130</x>
@@ -230,7 +229,7 @@ QPushButton::pressed{
         <string>k</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_10">
+      <widget class="QPushButton" name="Facebook_Button">
        <property name="geometry">
         <rect>
          <x>40</x>
@@ -385,16 +384,16 @@ background-color: 0;
      <widget class="QLabel" name="label_2">
       <property name="geometry">
        <rect>
-        <x>50</x>
-        <y>30</y>
-        <width>341</width>
+        <x>60</x>
+        <y>26</y>
+        <width>211</width>
         <height>61</height>
        </rect>
       </property>
       <property name="font">
        <font>
         <family>MS Shell Dlg 2</family>
-        <pointsize>21</pointsize>
+        <pointsize>22</pointsize>
         <weight>75</weight>
         <bold>true</bold>
        </font>
@@ -404,13 +403,13 @@ background-color: 0;
 color: qlineargradient(spread:pad, x1:0.961, y1:0.091, x2:1, y2:0.00568182, stop:0.409091 rgba(0, 175, 178, 255), stop:1 rgba(255, 255, 255, 255));</string>
       </property>
       <property name="text">
-       <string>Library Laroussi System </string>
+       <string>Login System</string>
       </property>
      </widget>
      <widget class="QLabel" name="msg_label">
       <property name="geometry">
        <rect>
-        <x>70</x>
+        <x>80</x>
         <y>90</y>
         <width>271</width>
         <height>31</height>
@@ -437,9 +436,9 @@ background-color: 0;</string>
      <widget class="QPushButton" name="login_Btn">
       <property name="geometry">
        <rect>
-        <x>80</x>
-        <y>260</y>
-        <width>271</width>
+        <x>60</x>
+        <y>293</y>
+        <width>311</width>
         <height>41</height>
        </rect>
       </property>
@@ -480,9 +479,9 @@ QPushButton::pressed{
      <widget class="QLineEdit" name="login_username">
       <property name="geometry">
        <rect>
-        <x>80</x>
+        <x>60</x>
         <y>150</y>
-        <width>271</width>
+        <width>311</width>
         <height>35</height>
        </rect>
       </property>
@@ -507,7 +506,7 @@ QPushButton::pressed{
 color: #273746 ;
 border: none;
 border-bottom: 2px solid rgb(125, 168, 255);
-border-radius: 5px;
+border-radius: 2px;
 padding: 5px;
 padding-left: 5px;</string>
       </property>
@@ -521,9 +520,9 @@ padding-left: 5px;</string>
      <widget class="QLineEdit" name="login_password">
       <property name="geometry">
        <rect>
-        <x>80</x>
+        <x>60</x>
         <y>200</y>
-        <width>271</width>
+        <width>311</width>
         <height>35</height>
        </rect>
       </property>
@@ -546,7 +545,7 @@ padding-left: 5px;</string>
 color: #273746 ;
 border: none;
 border-bottom: 2px solid rgb(125, 168, 255);
-border-radius: 5px;
+border-radius: 2px;
 padding: 5px;
 padding-left: 5px;</string>
       </property>
@@ -560,9 +559,9 @@ padding-left: 5px;</string>
      <widget class="QLabel" name="label_7">
       <property name="geometry">
        <rect>
-        <x>100</x>
-        <y>330</y>
-        <width>181</width>
+        <x>112</x>
+        <y>351</y>
+        <width>141</width>
         <height>21</height>
        </rect>
       </property>
@@ -579,15 +578,15 @@ padding-left: 5px;</string>
 background-color: 0;</string>
       </property>
       <property name="text">
-       <string>Still no account? Please go to </string>
+       <string>Don't have an account?</string>
       </property>
      </widget>
      <widget class="QPushButton" name="SignUp_Button">
       <property name="geometry">
        <rect>
-        <x>270</x>
-        <y>329</y>
-        <width>61</width>
+        <x>252</x>
+        <y>350</y>
+        <width>81</width>
         <height>23</height>
        </rect>
       </property>
@@ -608,20 +607,20 @@ background-color: 0;</string>
   border-radius: 5px;
 }
 QPushButton::pressed{
-	padding-left:5px;
-	padding-top: 3px;
+	padding-left:2px;
+	padding-top: 1px;
 }</string>
       </property>
       <property name="text">
-       <string>Sign up</string>
+       <string>Sign up Now</string>
       </property>
      </widget>
      <widget class="QPushButton" name="Show_pass">
       <property name="geometry">
        <rect>
-        <x>311</x>
-        <y>206</y>
-        <width>31</width>
+        <x>330</x>
+        <y>203</y>
+        <width>28</width>
         <height>23</height>
        </rect>
       </property>
@@ -635,7 +634,7 @@ QPushButton::pressed{
        <string notr="true">QPushButton{
   background-color: 0;
   border-radius:0;
-  image: url(:/icons/view.png);
+	background-image: url(:/images/Images/view.png);
 }
 QPushButton::pressed{
 	padding-left:2px;
@@ -649,9 +648,9 @@ QPushButton::pressed{
      <widget class="QPushButton" name="Hide_pass">
       <property name="geometry">
        <rect>
-        <x>311</x>
-        <y>206</y>
-        <width>31</width>
+        <x>330</x>
+        <y>203</y>
+        <width>28</width>
         <height>23</height>
        </rect>
       </property>
@@ -668,7 +667,7 @@ QPushButton::pressed{
        <string notr="true">QPushButton{
   background-color: 0;
   border-radius:0;
-image: url(:/icons/hidden.png);
+	background-image: url(:/images/Images/hidden.png);
 }
 QPushButton::pressed{
 	padding-left:2px;
@@ -679,13 +678,47 @@ QPushButton::pressed{
        <string/>
       </property>
      </widget>
+     <widget class="QPushButton" name="Forget_Pass_Button">
+      <property name="geometry">
+       <rect>
+        <x>51</x>
+        <y>250</y>
+        <width>141</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+  color: rgb(93, 173, 226);
+	background-color:0;
+border:0;
+}
+QPushButton::pressed{
+	padding-left:2px;
+	padding-top: 2px;
+}</string>
+      </property>
+      <property name="text">
+       <string>Forget Password ?</string>
+      </property>
+     </widget>
     </widget>
    </widget>
   </widget>
   <widget class="QStatusBar" name="Login_statusBar"/>
  </widget>
  <resources>
-  <include location="icons.qrc"/>
+  <include location="images_rc.qrc"/>
  </resources>
  <connections/>
 </ui>

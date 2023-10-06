@@ -7,15 +7,15 @@
     <x>0</x>
     <y>0</y>
     <width>998</width>
-    <height>614</height>
+    <height>585</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Registration Inventory Management System | https://laroussigsm.net/</string>
   </property>
   <property name="windowIcon">
-   <iconset>
-    <normaloff>:/icons/group.png</normaloff>:/icons/group.png</iconset>
+   <iconset resource="images_rc.qrc">
+    <normaloff>:/images/Images/employee.png</normaloff>:/images/Images/employee.png</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QFrame" name="Container">
@@ -24,7 +24,7 @@
       <x>0</x>
       <y>0</y>
       <width>1021</width>
-      <height>631</height>
+      <height>581</height>
      </rect>
     </property>
     <property name="font">
@@ -35,7 +35,7 @@
     <property name="styleSheet">
      <string notr="true">
 QFrame#Container{
-	background-color:#2c2c54;
+background-color: rgb(28, 40, 51);
 }</string>
     </property>
     <property name="frameShape">
@@ -50,7 +50,7 @@ QFrame#Container{
        <x>19</x>
        <y>12</y>
        <width>391</width>
-       <height>561</height>
+       <height>541</height>
       </rect>
      </property>
      <property name="autoFillBackground">
@@ -83,7 +83,7 @@ border:1px solid #40407a;
       <property name="frameShadow">
        <enum>QFrame::Raised</enum>
       </property>
-      <widget class="QPushButton" name="pushButton_7">
+      <widget class="QPushButton" name="Telegram_Button">
        <property name="geometry">
         <rect>
          <x>70</x>
@@ -115,7 +115,7 @@ QPushButton::pressed{
         <string>(</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_4">
+      <widget class="QPushButton" name="WordPress_Button">
        <property name="geometry">
         <rect>
          <x>100</x>
@@ -147,7 +147,7 @@ QPushButton::pressed{
         <string>e</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_8">
+      <widget class="QPushButton" name="Youtube_Button">
        <property name="geometry">
         <rect>
          <x>10</x>
@@ -179,7 +179,7 @@ QPushButton::pressed{
         <string>M</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_9">
+      <widget class="QPushButton" name="Mail_Button">
        <property name="geometry">
         <rect>
          <x>130</x>
@@ -211,7 +211,7 @@ QPushButton::pressed{
         <string>k</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_10">
+      <widget class="QPushButton" name="Facebook_Button">
        <property name="geometry">
         <rect>
          <x>40</x>
@@ -250,7 +250,7 @@ QPushButton::pressed{
         <x>40</x>
         <y>430</y>
         <width>241</width>
-        <height>81</height>
+        <height>61</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -344,14 +344,14 @@ background-color:0;
      <widget class="QWidget" name="widget" native="true">
       <property name="geometry">
        <rect>
-        <x>60</x>
-        <y>70</y>
-        <width>251</width>
-        <height>251</height>
+        <x>20</x>
+        <y>40</y>
+        <width>351</width>
+        <height>361</height>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-image: url(:/images/Images/user.png);</string>
+       <string notr="true">background-image: url(:/images/Images/pngegg.png);</string>
       </property>
      </widget>
     </widget>
@@ -379,36 +379,12 @@ background-color: 0;
      <property name="frameShadow">
       <enum>QFrame::Raised</enum>
      </property>
-     <widget class="QLabel" name="label_2">
-      <property name="geometry">
-       <rect>
-        <x>130</x>
-        <y>20</y>
-        <width>361</width>
-        <height>51</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>MS Shell Dlg 2</family>
-        <pointsize>22</pointsize>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">color: rgb(239, 239, 239);</string>
-      </property>
-      <property name="text">
-       <string> Create a Free Account !</string>
-      </property>
-     </widget>
      <widget class="QPushButton" name="Reg_Btn">
       <property name="geometry">
        <rect>
         <x>240</x>
         <y>440</y>
-        <width>261</width>
+        <width>301</width>
         <height>41</height>
        </rect>
       </property>
@@ -432,8 +408,8 @@ background-color: 0;
       </property>
       <property name="styleSheet">
        <string notr="true">QPushButton{
-  background-color: #FFC312;
-  color: #1e272e;
+  background-color: rgb(52, 168, 83);
+  color: rgb(255, 255, 255);
   border-radius: 5px;
 }
 QPushButton::pressed{
@@ -446,12 +422,12 @@ QPushButton::pressed{
        <string>Register</string>
       </property>
      </widget>
-     <widget class="QLineEdit" name="Reg_username">
+     <widget class="QLineEdit" name="Reg_First_username">
       <property name="geometry">
        <rect>
         <x>240</x>
         <y>100</y>
-        <width>261</width>
+        <width>301</width>
         <height>35</height>
        </rect>
       </property>
@@ -476,7 +452,7 @@ QPushButton::pressed{
 color: #273746 ;
 border: none;
 border-bottom: 2px solid rgb(125, 168, 255);
-border-radius: 5px;
+border-radius: 2px;
 padding: 5px;
 padding-left: 5px;</string>
       </property>
@@ -487,51 +463,12 @@ padding-left: 5px;</string>
        <string>Enter Your First Name ...</string>
       </property>
      </widget>
-     <widget class="QLineEdit" name="Reg_password">
-      <property name="geometry">
-       <rect>
-        <x>240</x>
-        <y>350</y>
-        <width>261</width>
-        <height>35</height>
-       </rect>
-      </property>
-      <property name="minimumSize">
-       <size>
-        <width>231</width>
-        <height>0</height>
-       </size>
-      </property>
-      <property name="font">
-       <font>
-        <pointsize>10</pointsize>
-       </font>
-      </property>
-      <property name="acceptDrops">
-       <bool>true</bool>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">background-color: rgb(255, 255, 255);
-color: #273746 ;
-border: none;
-border-bottom: 2px solid rgb(125, 168, 255);
-border-radius: 5px;
-padding: 5px;
-padding-left: 5px;</string>
-      </property>
-      <property name="echoMode">
-       <enum>QLineEdit::Password</enum>
-      </property>
-      <property name="placeholderText">
-       <string>Enter Your Password ...</string>
-      </property>
-     </widget>
      <widget class="QLineEdit" name="Reg_email">
       <property name="geometry">
        <rect>
         <x>240</x>
         <y>180</y>
-        <width>261</width>
+        <width>301</width>
         <height>35</height>
        </rect>
       </property>
@@ -554,7 +491,7 @@ padding-left: 5px;</string>
 color: #273746 ;
 border: none;
 border-bottom: 2px solid rgb(125, 168, 255);
-border-radius: 5px;
+border-radius: 2px;
 padding: 5px;
 padding-left: 5px;</string>
       </property>
@@ -565,11 +502,11 @@ padding-left: 5px;</string>
        <string>XXXXX@Email.com</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="backLogin_Button">
+     <widget class="QPushButton" name="back2Login_Button">
       <property name="geometry">
        <rect>
-        <x>262</x>
-        <y>512</y>
+        <x>82</x>
+        <y>502</y>
         <width>241</width>
         <height>23</height>
        </rect>
@@ -587,7 +524,7 @@ padding-left: 5px;</string>
       <property name="styleSheet">
        <string notr="true">QPushButton{
   background-color: 0;
-	color: rgb(255, 255, 255);
+ color: rgb(93, 173, 226);
   border-radius: 5px;
 }
 QPushButton::pressed{
@@ -602,8 +539,8 @@ QPushButton::pressed{
      <widget class="QPushButton" name="pushButton">
       <property name="geometry">
        <rect>
-        <x>230</x>
-        <y>510</y>
+        <x>50</x>
+        <y>500</y>
         <width>31</width>
         <height>31</height>
        </rect>
@@ -619,7 +556,7 @@ QPushButton::pressed{
       <property name="styleSheet">
        <string notr="true">QPushButton{
   background-color: 0;
-	color: rgb(255, 170, 0);
+	color: rgb(255, 255, 255);
   border-radius: 5px;
 }</string>
       </property>
@@ -696,12 +633,12 @@ QPushButton::pressed{
        <string/>
       </property>
      </widget>
-     <widget class="QLineEdit" name="Reg_username_2">
+     <widget class="QLineEdit" name="Reg_last_username">
       <property name="geometry">
        <rect>
         <x>240</x>
         <y>140</y>
-        <width>261</width>
+        <width>301</width>
         <height>35</height>
        </rect>
       </property>
@@ -726,7 +663,7 @@ QPushButton::pressed{
 color: #273746 ;
 border: none;
 border-bottom: 2px solid rgb(125, 168, 255);
-border-radius: 5px;
+border-radius: 2px;
 padding: 5px;
 padding-left: 5px;</string>
       </property>
@@ -737,12 +674,12 @@ padding-left: 5px;</string>
        <string>Enter Your Last Name ...</string>
       </property>
      </widget>
-     <widget class="QRadioButton" name="radioButton">
+     <widget class="QRadioButton" name="radio_female_Button">
       <property name="geometry">
        <rect>
-        <x>420</x>
+        <x>340</x>
         <y>230</y>
-        <width>71</width>
+        <width>91</width>
         <height>17</height>
        </rect>
       </property>
@@ -759,13 +696,17 @@ padding-left: 5px;</string>
       <property name="text">
        <string>Female</string>
       </property>
+      <property name="icon">
+       <iconset resource="images_rc.qrc">
+        <normaloff>:/images/Images/girl.png</normaloff>:/images/Images/girl.png</iconset>
+      </property>
      </widget>
-     <widget class="QRadioButton" name="radioButton_2">
+     <widget class="QRadioButton" name="radio_male_Button">
       <property name="geometry">
        <rect>
-        <x>310</x>
+        <x>240</x>
         <y>230</y>
-        <width>61</width>
+        <width>81</width>
         <height>17</height>
        </rect>
       </property>
@@ -781,6 +722,10 @@ padding-left: 5px;</string>
       </property>
       <property name="text">
        <string>Male</string>
+      </property>
+      <property name="icon">
+       <iconset resource="images_rc.qrc">
+        <normaloff>:/images/Images/standing-up-man-.png</normaloff>:/images/Images/standing-up-man-.png</iconset>
       </property>
      </widget>
      <widget class="QLabel" name="label">
@@ -806,12 +751,12 @@ padding-left: 5px;</string>
        <string>Select Gender</string>
       </property>
      </widget>
-     <widget class="QComboBox" name="comboBox">
+     <widget class="QComboBox" name="Country_Comb">
       <property name="geometry">
        <rect>
         <x>240</x>
         <y>260</y>
-        <width>261</width>
+        <width>301</width>
         <height>31</height>
        </rect>
       </property>
@@ -859,960 +804,1728 @@ padding-left: 5px;</string>
        <property name="text">
         <string>Andorra</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/ad.png</normaloff>:/images/country flags_250px/ad.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Angola</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/ao.png</normaloff>:/images/country flags_250px/ao.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Antigua and Barbuda	</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/ag.png</normaloff>:/images/country flags_250px/ag.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Argentina</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/ar.png</normaloff>:/images/country flags_250px/ar.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Armenia</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/am.png</normaloff>:/images/country flags_250px/am.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Australia</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/ai.png</normaloff>:/images/country flags_250px/ai.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Austria</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/at.png</normaloff>:/images/country flags_250px/at.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Azerbaijan</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/az.png</normaloff>:/images/country flags_250px/az.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Bahamas</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/bs.png</normaloff>:/images/country flags_250px/bs.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Bahrain</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/bh.png</normaloff>:/images/country flags_250px/bh.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Bangladesh</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/bd.png</normaloff>:/images/country flags_250px/bd.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Barbados</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/bb.png</normaloff>:/images/country flags_250px/bb.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Belarus</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/by.png</normaloff>:/images/country flags_250px/by.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Belgium</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/be.png</normaloff>:/images/country flags_250px/be.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Belize</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/bz.png</normaloff>:/images/country flags_250px/bz.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Benin</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/bj.png</normaloff>:/images/country flags_250px/bj.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Bhutan</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/bt.png</normaloff>:/images/country flags_250px/bt.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Bolivia</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/bo.png</normaloff>:/images/country flags_250px/bo.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Bosnia and Herzegovina</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/ba.png</normaloff>:/images/country flags_250px/ba.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Botswana</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/bw.png</normaloff>:/images/country flags_250px/bw.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Brazil</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/br.png</normaloff>:/images/country flags_250px/br.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Brunei</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/bn.png</normaloff>:/images/country flags_250px/bn.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Bulgaria</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/bg.png</normaloff>:/images/country flags_250px/bg.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Burkina Faso</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/bf.png</normaloff>:/images/country flags_250px/bf.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Burundi</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/bi.png</normaloff>:/images/country flags_250px/bi.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Côte d'Ivoire</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/ci.png</normaloff>:/images/country flags_250px/ci.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Cabo Verde</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/cv.png</normaloff>:/images/country flags_250px/cv.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Cambodia</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/kh.png</normaloff>:/images/country flags_250px/kh.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Cameroon</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/cm.png</normaloff>:/images/country flags_250px/cm.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Canada</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/ca.png</normaloff>:/images/country flags_250px/ca.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Central African Republic</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/cf.png</normaloff>:/images/country flags_250px/cf.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Chad</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/ro.png</normaloff>:/images/country flags_250px/ro.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Chile</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/cl.png</normaloff>:/images/country flags_250px/cl.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>China</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/cn.png</normaloff>:/images/country flags_250px/cn.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Colombia</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/co.png</normaloff>:/images/country flags_250px/co.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Comoros</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/km.png</normaloff>:/images/country flags_250px/km.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Congo (Congo-Brazzaville)</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/cg.png</normaloff>:/images/country flags_250px/cg.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Costa Rica</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/cr.png</normaloff>:/images/country flags_250px/cr.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Croatia</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/hr.png</normaloff>:/images/country flags_250px/hr.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Cuba</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/cu.png</normaloff>:/images/country flags_250px/cu.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Cyprus</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/cy.png</normaloff>:/images/country flags_250px/cy.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Czechia (Czech Republic)</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/cz.png</normaloff>:/images/country flags_250px/cz.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Democratic Republic of the Congo</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/cd.png</normaloff>:/images/country flags_250px/cd.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Denmark</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/dk.png</normaloff>:/images/country flags_250px/dk.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Djibouti</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/dj.png</normaloff>:/images/country flags_250px/dj.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Dominica</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/do.png</normaloff>:/images/country flags_250px/do.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Dominican Republic</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/do.png</normaloff>:/images/country flags_250px/do.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Ecuador</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/ec.png</normaloff>:/images/country flags_250px/ec.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Egypt</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/eg.png</normaloff>:/images/country flags_250px/eg.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>El Salvador</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/sv.png</normaloff>:/images/country flags_250px/sv.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Equatorial Guinea</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/gq.png</normaloff>:/images/country flags_250px/gq.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Eritrea</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/er.png</normaloff>:/images/country flags_250px/er.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Estonia</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/ee.png</normaloff>:/images/country flags_250px/ee.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Eswatini (fmr. &quot;Swaziland&quot;)</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/Esw.png</normaloff>:/images/country flags_250px/Esw.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Ethiopia</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/et.png</normaloff>:/images/country flags_250px/et.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Fiji</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/fj.png</normaloff>:/images/country flags_250px/fj.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Finland</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/fi.png</normaloff>:/images/country flags_250px/fi.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>France</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/fr.png</normaloff>:/images/country flags_250px/fr.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Gabon</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/ga.png</normaloff>:/images/country flags_250px/ga.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Gambia</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/gm.png</normaloff>:/images/country flags_250px/gm.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Georgia</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/ge.png</normaloff>:/images/country flags_250px/ge.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Germany</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/de.png</normaloff>:/images/country flags_250px/de.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Ghana</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/gh.png</normaloff>:/images/country flags_250px/gh.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Greece</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/gr.png</normaloff>:/images/country flags_250px/gr.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Grenada</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/gd.png</normaloff>:/images/country flags_250px/gd.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Guatemala</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/gt.png</normaloff>:/images/country flags_250px/gt.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Guinea</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/gn.png</normaloff>:/images/country flags_250px/gn.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Guinea-Bissau</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/gw.png</normaloff>:/images/country flags_250px/gw.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Guyana</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/gy.png</normaloff>:/images/country flags_250px/gy.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Haiti</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/ht.png</normaloff>:/images/country flags_250px/ht.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Holy See</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/va.png</normaloff>:/images/country flags_250px/va.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Honduras</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/hn.png</normaloff>:/images/country flags_250px/hn.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Hungary</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/hu.png</normaloff>:/images/country flags_250px/hu.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Iceland</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/is.png</normaloff>:/images/country flags_250px/is.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>India</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/in.png</normaloff>:/images/country flags_250px/in.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Indonesia</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/id.png</normaloff>:/images/country flags_250px/id.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Iran</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/ir.png</normaloff>:/images/country flags_250px/ir.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Iraq</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/iq.png</normaloff>:/images/country flags_250px/iq.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Ireland</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/ie.png</normaloff>:/images/country flags_250px/ie.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Israel</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/il.png</normaloff>:/images/country flags_250px/il.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Italy</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/it.png</normaloff>:/images/country flags_250px/it.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Jamaica</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/jm.png</normaloff>:/images/country flags_250px/jm.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Japan</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/jp.png</normaloff>:/images/country flags_250px/jp.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Jordan</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/jo.png</normaloff>:/images/country flags_250px/jo.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Kazakhstan</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/kz.png</normaloff>:/images/country flags_250px/kz.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Kenya</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/ke.png</normaloff>:/images/country flags_250px/ke.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Kiribati</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/ki.png</normaloff>:/images/country flags_250px/ki.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Kuwait</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/kw.png</normaloff>:/images/country flags_250px/kw.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Kyrgyzstan</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/kg.png</normaloff>:/images/country flags_250px/kg.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Laos</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/la.png</normaloff>:/images/country flags_250px/la.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Latvia</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/lv.png</normaloff>:/images/country flags_250px/lv.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Lebanon</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/lb.png</normaloff>:/images/country flags_250px/lb.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Lesotho</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/ls.png</normaloff>:/images/country flags_250px/ls.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Liberia</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/lr.png</normaloff>:/images/country flags_250px/lr.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Libya</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/ly.png</normaloff>:/images/country flags_250px/ly.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Liechtenstein</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/li.png</normaloff>:/images/country flags_250px/li.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Lithuania</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/lt.png</normaloff>:/images/country flags_250px/lt.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Luxembourg</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/lu.png</normaloff>:/images/country flags_250px/lu.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Madagascar</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/mg.png</normaloff>:/images/country flags_250px/mg.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Malawi</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/mw.png</normaloff>:/images/country flags_250px/mw.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Malaysia</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/my.png</normaloff>:/images/country flags_250px/my.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Maldives</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/mv.png</normaloff>:/images/country flags_250px/mv.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Mali</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/ml.png</normaloff>:/images/country flags_250px/ml.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Malta</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/mt.png</normaloff>:/images/country flags_250px/mt.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Marshall Islands</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/mh.png</normaloff>:/images/country flags_250px/mh.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Mauritania</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/mr.png</normaloff>:/images/country flags_250px/mr.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Mauritius</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/mu.png</normaloff>:/images/country flags_250px/mu.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Mexico</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/mx.png</normaloff>:/images/country flags_250px/mx.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Micronesia</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/fm.png</normaloff>:/images/country flags_250px/fm.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Moldova</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/md.png</normaloff>:/images/country flags_250px/md.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Monaco</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/mc.png</normaloff>:/images/country flags_250px/mc.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Mongolia</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/mn.png</normaloff>:/images/country flags_250px/mn.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Montenegro</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/me.png</normaloff>:/images/country flags_250px/me.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Morocco</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/ma.png</normaloff>:/images/country flags_250px/ma.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Mozambique</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/mz.png</normaloff>:/images/country flags_250px/mz.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Myanmar (formerly Burma)</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/mm.png</normaloff>:/images/country flags_250px/mm.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Namibia</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/na.png</normaloff>:/images/country flags_250px/na.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Nauru</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/nr.png</normaloff>:/images/country flags_250px/nr.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Nepal</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/np.png</normaloff>:/images/country flags_250px/np.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Netherlands</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/nl.png</normaloff>:/images/country flags_250px/nl.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>New Zealand</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/nz.png</normaloff>:/images/country flags_250px/nz.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Nicaragua</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/ni.png</normaloff>:/images/country flags_250px/ni.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Niger</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/ne.png</normaloff>:/images/country flags_250px/ne.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Nigeria</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/ng.png</normaloff>:/images/country flags_250px/ng.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>North Korea</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/kp.png</normaloff>:/images/country flags_250px/kp.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>North Macedonia</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/mk.png</normaloff>:/images/country flags_250px/mk.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Norway</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/no.png</normaloff>:/images/country flags_250px/no.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Oman</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/om.png</normaloff>:/images/country flags_250px/om.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Pakistan</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/pk.png</normaloff>:/images/country flags_250px/pk.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Palau</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/pw.png</normaloff>:/images/country flags_250px/pw.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Palestine State</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/ps.png</normaloff>:/images/country flags_250px/ps.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Panama</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/pa.png</normaloff>:/images/country flags_250px/pa.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Papua New Guinea</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/pg.png</normaloff>:/images/country flags_250px/pg.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Paraguay</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/py.png</normaloff>:/images/country flags_250px/py.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Peru</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/pe.png</normaloff>:/images/country flags_250px/pe.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Philippines</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/ph.png</normaloff>:/images/country flags_250px/ph.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Poland</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/pl.png</normaloff>:/images/country flags_250px/pl.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Portugal</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/pt.png</normaloff>:/images/country flags_250px/pt.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Qatar</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/qa.png</normaloff>:/images/country flags_250px/qa.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Romania</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/ro.png</normaloff>:/images/country flags_250px/ro.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Russia</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/ru.png</normaloff>:/images/country flags_250px/ru.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Rwanda</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/rw.png</normaloff>:/images/country flags_250px/rw.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Saint Kitts and Nevis</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/kn.png</normaloff>:/images/country flags_250px/kn.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Saint Lucia</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/lc.png</normaloff>:/images/country flags_250px/lc.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Saint Vincent and the Grenadines</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/vc.png</normaloff>:/images/country flags_250px/vc.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Samoa</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/ws.png</normaloff>:/images/country flags_250px/ws.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>San Marino</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/sm.png</normaloff>:/images/country flags_250px/sm.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Sao Tome and Principe</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/st.png</normaloff>:/images/country flags_250px/st.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Saudi Arabia</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/sa.png</normaloff>:/images/country flags_250px/sa.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Senegal</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/sn.png</normaloff>:/images/country flags_250px/sn.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Serbia</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/rs.png</normaloff>:/images/country flags_250px/rs.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Seychelles</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/sc.png</normaloff>:/images/country flags_250px/sc.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Sierra Leone</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/sl.png</normaloff>:/images/country flags_250px/sl.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Singapore</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/sg.png</normaloff>:/images/country flags_250px/sg.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Slovakia</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/sk.png</normaloff>:/images/country flags_250px/sk.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Slovenia</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/si.png</normaloff>:/images/country flags_250px/si.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Solomon Islands</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/sb.png</normaloff>:/images/country flags_250px/sb.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Somalia</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/so.png</normaloff>:/images/country flags_250px/so.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>South Africa</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/za.png</normaloff>:/images/country flags_250px/za.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>South Korea</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/kr.png</normaloff>:/images/country flags_250px/kr.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>South Sudan</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/ss.png</normaloff>:/images/country flags_250px/ss.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Spain</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/es.png</normaloff>:/images/country flags_250px/es.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Sri Lanka</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/lk.png</normaloff>:/images/country flags_250px/lk.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Sudan</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/sd.png</normaloff>:/images/country flags_250px/sd.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Suriname</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/sr.png</normaloff>:/images/country flags_250px/sr.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Sweden</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/se.png</normaloff>:/images/country flags_250px/se.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Switzerland</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/ch.png</normaloff>:/images/country flags_250px/ch.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Syria</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/sy.png</normaloff>:/images/country flags_250px/sy.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Tajikistan</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/tj.png</normaloff>:/images/country flags_250px/tj.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Tanzania</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/tz.png</normaloff>:/images/country flags_250px/tz.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Thailand</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/th.png</normaloff>:/images/country flags_250px/th.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Timor-Leste</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/tl.png</normaloff>:/images/country flags_250px/tl.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Togo</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/tg.png</normaloff>:/images/country flags_250px/tg.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Tonga</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/to.png</normaloff>:/images/country flags_250px/to.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Trinidad and Tobago</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/tt.png</normaloff>:/images/country flags_250px/tt.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Tunisia</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/tn.png</normaloff>:/images/country flags_250px/tn.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Turkey</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/tr.png</normaloff>:/images/country flags_250px/tr.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Turkmenistan</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/tm.png</normaloff>:/images/country flags_250px/tm.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Tuvalu</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/tv.png</normaloff>:/images/country flags_250px/tv.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Uganda</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/ug.png</normaloff>:/images/country flags_250px/ug.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Ukraine</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/ua.png</normaloff>:/images/country flags_250px/ua.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>United Arab Emirates</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/ae.png</normaloff>:/images/country flags_250px/ae.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>United Kingdom</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/gb.png</normaloff>:/images/country flags_250px/gb.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>United States of America</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/us.png</normaloff>:/images/country flags_250px/us.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Uruguay</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/uy.png</normaloff>:/images/country flags_250px/uy.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Uzbekistan</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/uz.png</normaloff>:/images/country flags_250px/uz.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Vanuatu</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/vu.png</normaloff>:/images/country flags_250px/vu.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Venezuela</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/ve.png</normaloff>:/images/country flags_250px/ve.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Vietnam</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/vn.png</normaloff>:/images/country flags_250px/vn.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Yemen</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/ye.png</normaloff>:/images/country flags_250px/ye.png</iconset>
        </property>
       </item>
       <item>
        <property name="text">
         <string>Zambia</string>
        </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/zm.png</normaloff>:/images/country flags_250px/zm.png</iconset>
+       </property>
       </item>
       <item>
        <property name="text">
         <string>Zimbabwe</string>
+       </property>
+       <property name="icon">
+        <iconset resource="images_rc.qrc">
+         <normaloff>:/images/country flags_250px/zw.png</normaloff>:/images/country flags_250px/zw.png</iconset>
        </property>
       </item>
      </widget>
@@ -1850,6 +2563,7 @@ padding-left: 5px;</string>
       </property>
       <property name="font">
        <font>
+        <family>PT Simple Bold Ruled</family>
         <pointsize>12</pointsize>
         <weight>75</weight>
         <bold>true</bold>
@@ -1908,12 +2622,12 @@ padding-left: 5px;</string>
        <string>Email</string>
       </property>
      </widget>
-     <widget class="QLineEdit" name="Reg_username_3">
+     <widget class="QLineEdit" name="Reg_username">
       <property name="geometry">
        <rect>
         <x>240</x>
         <y>310</y>
-        <width>261</width>
+        <width>301</width>
         <height>35</height>
        </rect>
       </property>
@@ -1938,7 +2652,7 @@ padding-left: 5px;</string>
 color: #273746 ;
 border: none;
 border-bottom: 2px solid rgb(125, 168, 255);
-border-radius: 5px;
+border-radius: 2px;
 padding: 5px;
 padding-left: 5px;</string>
       </property>
@@ -1995,12 +2709,12 @@ padding-left: 5px;</string>
        <string>Password</string>
       </property>
      </widget>
-     <widget class="QLineEdit" name="Reg_password_2">
+     <widget class="QLineEdit" name="Reg_confirm_password">
       <property name="geometry">
        <rect>
         <x>240</x>
         <y>390</y>
-        <width>261</width>
+        <width>301</width>
         <height>35</height>
        </rect>
       </property>
@@ -2023,7 +2737,7 @@ padding-left: 5px;</string>
 color: #273746 ;
 border: none;
 border-bottom: 2px solid rgb(125, 168, 255);
-border-radius: 5px;
+border-radius: 2px;
 padding: 5px;
 padding-left: 5px;</string>
       </property>
@@ -2031,7 +2745,7 @@ padding-left: 5px;</string>
        <enum>QLineEdit::Password</enum>
       </property>
       <property name="placeholderText">
-       <string>Enter Your Password ...</string>
+       <string>Confirm Your Password ...</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_12">
@@ -2057,6 +2771,223 @@ padding-left: 5px;</string>
        <string>Confirm Password</string>
       </property>
      </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>20</y>
+        <width>361</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>22</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: 0;
+color: qlineargradient(spread:pad, x1:0.961, y1:0.091, x2:1, y2:0.00568182, stop:0.409091 rgba(0, 175, 178, 255), stop:1 rgba(255, 255, 255, 255));</string>
+      </property>
+      <property name="text">
+       <string> Create a Free Account !</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Reg_Hide_Pass">
+      <property name="geometry">
+       <rect>
+        <x>496</x>
+        <y>353</y>
+        <width>28</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="toolTip">
+       <string>Hide Password</string>
+      </property>
+      <property name="statusTip">
+       <string/>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+  background-color: 0;
+  border-radius:0;
+	background-image: url(:/images/Images/hidden.png);
+}
+QPushButton::pressed{
+	padding-left:2px;
+	padding-top: 1px;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Reg_Show_Pass">
+      <property name="geometry">
+       <rect>
+        <x>496</x>
+        <y>353</y>
+        <width>28</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="toolTip">
+       <string>Show Password</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+  background-color: 0;
+  border-radius:0;
+	background-image: url(:/images/Images/view.png);
+}
+QPushButton::pressed{
+	padding-left:2px;
+	padding-top: 1px;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="Reg_password">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>352</y>
+        <width>301</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>231</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="acceptDrops">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+color: #273746 ;
+border: none;
+border-bottom: 2px solid rgb(125, 168, 255);
+border-radius: 2px;
+padding: 5px;
+padding-left: 5px;</string>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+      <property name="placeholderText">
+       <string>Enter Your Password</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Reg_Hide_Confirm_Pass">
+      <property name="geometry">
+       <rect>
+        <x>496</x>
+        <y>393</y>
+        <width>28</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="toolTip">
+       <string>Hide Password</string>
+      </property>
+      <property name="statusTip">
+       <string/>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+  background-color: 0;
+  border-radius:0;
+	background-image: url(:/images/Images/hidden.png);
+}
+QPushButton::pressed{
+	padding-left:2px;
+	padding-top: 1px;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Reg_Show_Confirm_Pass">
+      <property name="geometry">
+       <rect>
+        <x>496</x>
+        <y>393</y>
+        <width>28</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="toolTip">
+       <string>Show Password</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+  background-color: 0;
+  border-radius:0;
+	background-image: url(:/images/Images/view.png);
+}
+QPushButton::pressed{
+	padding-left:2px;
+	padding-top: 1px;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <zorder>Reg_confirm_password</zorder>
+     <zorder>Reg_Show_Confirm_Pass</zorder>
+     <zorder>Reg_password</zorder>
+     <zorder>Reg_Show_Pass</zorder>
+     <zorder>Reg_Btn</zorder>
+     <zorder>Reg_First_username</zorder>
+     <zorder>Reg_email</zorder>
+     <zorder>back2Login_Button</zorder>
+     <zorder>pushButton</zorder>
+     <zorder>Reg_Show_pass</zorder>
+     <zorder>Reg_Hide_pass</zorder>
+     <zorder>Reg_last_username</zorder>
+     <zorder>radio_female_Button</zorder>
+     <zorder>radio_male_Button</zorder>
+     <zorder>label</zorder>
+     <zorder>Country_Comb</zorder>
+     <zorder>label_3</zorder>
+     <zorder>label_7</zorder>
+     <zorder>label_8</zorder>
+     <zorder>label_9</zorder>
+     <zorder>Reg_username</zorder>
+     <zorder>label_10</zorder>
+     <zorder>label_11</zorder>
+     <zorder>label_12</zorder>
+     <zorder>label_13</zorder>
+     <zorder>Reg_Hide_Pass</zorder>
+     <zorder>Reg_Hide_Confirm_Pass</zorder>
     </widget>
    </widget>
   </widget>
